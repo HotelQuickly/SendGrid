@@ -1,0 +1,45 @@
+{
+  "name": "hapi",
+  "description": "WebServer for SendGrid callbacks",
+  "homepage": "http://hapijs.com",
+  "version": "2.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spumko/hapi"
+  },
+  "main": "index",
+  "keywords": [
+    "framework",
+    "http",
+    "api",
+    "router"
+  ],
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "hapi": "2.1.x",
+    "mysql": "2.0.0-alpha8"
+  },
+  "devDependencies": {
+    "hapi": "2.1.x",
+    "mysql": "2.0.0-alpha8"
+  },
+  "bin": {
+    "hapi": "./bin/hapi"
+  },
+  "scripts": {
+    "test": "make test-cov"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/spumko/hapi/raw/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/spumko/hapi/issues"
+  },
+  "author": "Michal Juhas",
+  "license": "MIT"
+}
