@@ -10,6 +10,7 @@ var config = require('./config.js');
 var callback = require('./lib/callback.js');
 var mysqlTools = require('./lib/mysql-tools.js');
 var serverTools = require('./lib/server-tools.js');
+var healthyCheck = require('./lib/healthy-check.js');
 var errorCollector = require('./lib/error-collector.js');
 
 // Create a server with a host and port
@@ -28,11 +29,20 @@ mysqlConnection = mysqlTools.connectToMysql(mysqlModule, config);
 callback.setErrorCollector(errorCollector);
 callback.setMysqlConnection(mysqlConnection);
 
+// Configure healthy check
+healthyCheck.setMysqlConnection(mysqlConnection);
+healthyCheck.setTableName(config.healthyCheck.tableName);
+
 // Add the routes and their handlers
 server.route({
     method: 'POST',
     path: '/callback',
     handler: callback.handlerSaveCallback
+});
+server.route({
+    method: 'GET',
+    path: '/healthy-check',
+    handler: healthyCheck.handlerHealthyCheck
 });
 
 // Start server
