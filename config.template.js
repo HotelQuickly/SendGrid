@@ -12,3 +12,7 @@ exports.errorTracker = {
 exports.healthyCheck = {
 	tableName: "email_callback"
 }
+
+exports.server = {
+	port: 8080
+}

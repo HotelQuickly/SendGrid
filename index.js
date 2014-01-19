@@ -14,7 +14,7 @@ var healthyCheck = require('./lib/healthy-check.js');
 var errorCollector = require('./lib/error-collector.js');
 
 // Create a server with a host and port
-var server = hapiModule.createServer('localhost', 8000, {debug: false});
+var server = hapiModule.createServer('localhost', config.server.port, {debug: false});
 
 // Set up error tracker
 errorCollector.setRequestModule(requestModule);

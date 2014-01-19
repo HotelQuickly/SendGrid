@@ -15,10 +15,10 @@ For details about SendGrid's webhook documentation visit http://sendgrid.com/doc
 
 ## Instalation
 
-Install with npm
+Install ```hapi``` and the other dependencies (as listed in ```package.json```) from ```npm``` with command
 
 ```shell
-npm install hapi
+npm install
 ```
 
 The callbacks will be available with POST request on URL ```/callback```
@@ -38,3 +38,10 @@ For this healthy check to work, you need to:
 2. set up healthy check in Amazon AWS load balancer. It is be available with GET request on URL ```/healthy-check```
 
 ![Healthy Check setup](./docs/img/aws-healthy-check-setup.png)
+
+## Config
+
+Don't forget to create ```config.js``` file before you launch the application. You have two options:
+
+1. copy ```config.template.js``` to ```config.js``` and update parameters
+2. create a symlink to another directory with other config files, i.e. ```ln -s /srv/SecretConfig/production/config/config.sendgrid.js ./config.js```
