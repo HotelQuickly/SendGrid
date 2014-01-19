@@ -8,3 +8,7 @@ exports.database = {
 exports.errorTracker = {
 	url: "http://api.hotelquickly.com"
 }
+
+exports.healthyCheck = {
+	tableName: "email_callback"
+}

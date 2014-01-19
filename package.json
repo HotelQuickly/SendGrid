@@ -2,18 +2,13 @@
   "name": "SendGrid",
   "description": "WebServer for SendGrid callbacks",
   "homepage": "https://github.com/HotelQuickly/SendGrid/",
-  "version": "0.1",
+  "author": "Michal Juhas, HotelQuickly",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/HotelQuickly/SendGrid/"
   },
   "main": "index",
-  "keywords": [
-    "framework",
-    "http",
-    "api",
-    "router"
-  ],
   "engines": {
     "node": "0.10.x"
   },
@@ -39,7 +34,5 @@
   ],
   "bugs": {
     "url": "https://github.com/HotelQuickly/SendGrid/issues"
-  },
-  "author": "Michal Juhas, HotelQuickly",
-  "license": "MIT"
+  }
 }
