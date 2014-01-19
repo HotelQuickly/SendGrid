@@ -13,11 +13,12 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "hapi": "2.1.x",
-    "mysql": "2.0.0-alpha8"
+    "hapi": "2.x.x",
+    "mysql": "2.0.0-alpha8",
+    "request": "2.33.x"
   },
   "devDependencies": {
-    "hapi": "2.1.x",
+    "hapi": "2.x.x",
     "mysql": "2.0.0-alpha8"
   },
   "bin": {
