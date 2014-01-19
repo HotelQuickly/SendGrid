@@ -1,11 +1,11 @@
 {
-  "name": "hapi",
+  "name": "SendGrid",
   "description": "WebServer for SendGrid callbacks",
-  "homepage": "http://hapijs.com",
-  "version": "2.1.0",
+  "homepage": "https://github.com/HotelQuickly/SendGrid/",
+  "version": "0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/spumko/hapi"
+    "url": "git://github.com/HotelQuickly/SendGrid/"
   },
   "main": "index",
   "keywords": [
@@ -38,8 +38,8 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/spumko/hapi/issues"
+    "url": "https://github.com/HotelQuickly/SendGrid/issues"
   },
-  "author": "Michal Juhas",
+  "author": "Michal Juhas, HotelQuickly",
   "license": "MIT"
 }
