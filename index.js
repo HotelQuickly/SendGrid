@@ -9,7 +9,6 @@ var requestModule = require('request');
 var config = require('./config.js');
 var callback = require('./lib/callback.js');
 var mysqlTools = require('./lib/mysql-tools.js');
-var serverTools = require('./lib/server-tools.js');
 var healthyCheck = require('./lib/healthy-check.js');
 var errorCollector = require('./lib/error-collector.js');
 

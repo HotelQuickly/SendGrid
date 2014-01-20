@@ -45,3 +45,12 @@ Don't forget to create ```config.js``` file before you launch the application. Y
 
 1. copy ```config.template.js``` to ```config.js``` and update parameters
 2. create a symlink to another directory with other config files, i.e. ```ln -s /srv/SecretConfig/production/config/config.sendgrid.js ./config.js```
+
+## Run it on a server
+
+We recommend running it on a server with ```forever``` which is a great tool making sure it will run continuously, literaly, forever :-) See more info [about forever](https://github.com/nodejitsu/forever) in the documentation.
+
+This is what we use to run it on our server:
+```shell
+forever start --minUptime 1000 --spinSleepTime 5000 /srv/nodejs/SendGrid/index.js
+```
