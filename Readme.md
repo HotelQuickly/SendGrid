@@ -1,3 +1,5 @@
+# Deprecated
+
 # SendGrid callback server
 
 Node.js server using [Hapi framework](http://www.hapijs.com) to get callbacks from [SendGrid](http://www.sendgrid.com).
